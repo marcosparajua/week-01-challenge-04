@@ -9,6 +9,13 @@ body {
 
   background-color: white;
 }
+nav ul.desk {
+  list-style: none;
+  text-decoration: none;
+}
+nav.desk-menu {
+  display: none;
+}
 header {
   border-bottom: 3px solid;
   border-color: rgb(215, 214, 214);
@@ -60,5 +67,17 @@ h3 {
   padding: 2rem;
   img {
     border-radius: 10% 10% 10% 10%;
+  }
+}
+
+@media (width > 550px) {
+  header {
+    nav.mobile-menu {
+      display: none;
+    }
+    nav.desk-menu {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
